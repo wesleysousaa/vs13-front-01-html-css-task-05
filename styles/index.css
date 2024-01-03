@@ -1,0 +1,142 @@
+.best-movies-class {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.best-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 25vw;
+  max-width: 40%;
+  min-height: 10vh;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: var(--default-raduis);
+  text-align: center;
+  background-color: var(--background-lighter);
+  border-left: 2px solid var(--secondary);
+}
+
+article:hover {
+  animation: articleHover 0.2s ease-in-out both;
+}
+
+article iframe {
+  width: 100%;
+}
+
+article h3,
+p {
+  margin: 1rem 0;
+}
+
+article p {
+  text-align: justify;
+}
+
+.presentation-class {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: solid 2px #4f4f4f;
+  overflow: hidden;
+}
+
+.presentation-class h1 {
+  font-size: 6rem;
+}
+
+.presentation-class h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 25rem;
+  text-align: justify;
+  color: var(--text);
+}
+
+.presentation-class::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000060;
+  z-index: 0;
+}
+
+.presentation-class .description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  height: 50%;
+  top: 50%;
+  transform: translate(10%, -50%);
+}
+
+.map-img {
+  height: 100%;
+  width: 100%;
+}
+
+.presentation-class button {
+  width: fit-content;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: large;
+  height: 3rem;
+}
+
+@media (max-width: 1400px) {
+  .best-movies-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .best-movies-container article {
+    min-width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .presentation-class .description h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .presentation-class .description h1 {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .presentation-class .description h2 {
+    width: 80%;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 1200px) {
+  .map-img {
+    width: fit-content;
+  }
+}
+
+@keyframes articleHover {
+  to {
+    border-left: 25px solid var(--secondary);
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="author" content="Wesley Alencar" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/contato.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contato</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/"> <i class="fa-solid fa-house"></i>Início</a>
+          </li>
+          <li>
+            <a href="/pages/contato.html" class="active-link"
+              ><i class="fa-solid fa-address-card"></i>Contato</a
+            >
+          </li>
+          <li>
+            <a href="/pages/sobre.html"
+              ><i class="fa-solid fa-question"></i>Sobre nós</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="../index.html">
+        <h1 aria-label="Título do formulário (Contato)">Contato</h1>
+        <p
+          aria-label="Descrição do formulário (Você também pode entrar com contato comigo, basta preencher as
+        informações a seguir)"
+        >
+          Você também pode entrar com contato comigo, basta preencher as
+          informações a seguir
+        </p>
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          name="nome"
+          pattern=".{3,}"
+          id="nome"
+          title="Que nome é esse que só tem 2 letras? XD"
+          aria-label="Campo de texto para o nome"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          aria-label="Campo de email"
+          name="email"
+          id="email"
+          required
+        />
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          name="mensagem"
+          aria-label="Campo de texto para a mensagem"
+          id="mensagem"
+          cols="30"
+          rows="2"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          aria-label="Botão de enviar"
+          class="primary-button"
+        >
+          Enviar
+        </button>
+      </form>
+    </main>
+    <footer>
+      <p>© Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+main {
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+form {
+  display: inline-block;
+  width: 40rem;
+  text-align: center;
+  background-color: var(--background-lighter);
+  border-radius: var(--default-raduis);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+form p,
+h1 {
+  text-align: start;
+}
+
+form button {
+  width: 100%;
+}
+
+form p {
+  margin-bottom: 1rem;
+}
+
+form input,
+textarea,
+label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  text-align: start;
+  color: var(--text);
+}
+
+form input {
+  height: 2rem;
+}
+
+form input,
+textarea {
+  border-radius: var(--default-raduis);
+  border: none;
+}
+
+form input,
+textarea {
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 0.2rem;
+  background: none;
+  border: solid 1px var(--accent);
+}
+
+form form label {
+  display: block;
+}
+
+form input:focus,
+textarea:focus {
+  outline: solid 2px var(--primary);
+}
+
+@media (max-width: 1200px) {
+  form {
+    width: 80vw;
+  }
+}
